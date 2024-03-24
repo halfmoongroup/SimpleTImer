@@ -13,6 +13,14 @@
 		F391AC212BAE27C00019BCDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F391AC202BAE27C00019BCDA /* Preview Assets.xcassets */; };
 		F391AC232BAE27C00019BCDA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC222BAE27C00019BCDA /* Persistence.swift */; };
 		F391AC262BAE27C00019BCDA /* SimpleTImer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F391AC242BAE27C00019BCDA /* SimpleTImer.xcdatamodeld */; };
+		F391AC2D2BAE349C0019BCDA /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC2C2BAE349C0019BCDA /* CircleButton.swift */; };
+		F391AC2F2BAE565C0019BCDA /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC2E2BAE565C0019BCDA /* ThemeView.swift */; };
+		F391AC312BAF43760019BCDA /* SimpleTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC302BAF43760019BCDA /* SimpleTimerView.swift */; };
+		F391AC332BAF43C30019BCDA /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC322BAF43C30019BCDA /* TimerModel.swift */; };
+		F391AC352BAF47010019BCDA /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC342BAF47010019BCDA /* SoundPlayer.swift */; };
+		F391AC372BAF7A540019BCDA /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC362BAF7A540019BCDA /* CircularProgressView.swift */; };
+		F391AC392BAF7AF20019BCDA /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC382BAF7AF20019BCDA /* ButtonStyles.swift */; };
+		F391AC3B2BAFE34E0019BCDA /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC3A2BAFE34E0019BCDA /* TimerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,14 @@
 		F391AC202BAE27C00019BCDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F391AC222BAE27C00019BCDA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F391AC252BAE27C00019BCDA /* SimpleTImer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTImer.xcdatamodel; sourceTree = "<group>"; };
+		F391AC2C2BAE349C0019BCDA /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		F391AC2E2BAE565C0019BCDA /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		F391AC302BAF43760019BCDA /* SimpleTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTimerView.swift; sourceTree = "<group>"; };
+		F391AC322BAF43C30019BCDA /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		F391AC342BAF47010019BCDA /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		F391AC362BAF7A540019BCDA /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		F391AC382BAF7AF20019BCDA /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		F391AC3A2BAFE34E0019BCDA /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +72,19 @@
 			isa = PBXGroup;
 			children = (
 				F391AC192BAE27BF0019BCDA /* SimpleTImerApp.swift */,
+				F391AC302BAF43760019BCDA /* SimpleTimerView.swift */,
 				F391AC1B2BAE27BF0019BCDA /* ContentView.swift */,
+				F391AC382BAF7AF20019BCDA /* ButtonStyles.swift */,
+				F391AC3A2BAFE34E0019BCDA /* TimerButton.swift */,
+				F391AC362BAF7A540019BCDA /* CircularProgressView.swift */,
 				F391AC1D2BAE27C00019BCDA /* Assets.xcassets */,
 				F391AC222BAE27C00019BCDA /* Persistence.swift */,
+				F391AC342BAF47010019BCDA /* SoundPlayer.swift */,
 				F391AC242BAE27C00019BCDA /* SimpleTImer.xcdatamodeld */,
 				F391AC1F2BAE27C00019BCDA /* Preview Content */,
+				F391AC2C2BAE349C0019BCDA /* CircleButton.swift */,
+				F391AC2E2BAE565C0019BCDA /* ThemeView.swift */,
+				F391AC322BAF43C30019BCDA /* TimerModel.swift */,
 			);
 			path = SimpleTImer;
 			sourceTree = "<group>";
@@ -143,10 +167,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F391AC392BAF7AF20019BCDA /* ButtonStyles.swift in Sources */,
+				F391AC2D2BAE349C0019BCDA /* CircleButton.swift in Sources */,
 				F391AC232BAE27C00019BCDA /* Persistence.swift in Sources */,
 				F391AC1C2BAE27BF0019BCDA /* ContentView.swift in Sources */,
+				F391AC312BAF43760019BCDA /* SimpleTimerView.swift in Sources */,
+				F391AC352BAF47010019BCDA /* SoundPlayer.swift in Sources */,
 				F391AC1A2BAE27BF0019BCDA /* SimpleTImerApp.swift in Sources */,
+				F391AC2F2BAE565C0019BCDA /* ThemeView.swift in Sources */,
 				F391AC262BAE27C00019BCDA /* SimpleTImer.xcdatamodeld in Sources */,
+				F391AC3B2BAFE34E0019BCDA /* TimerButton.swift in Sources */,
+				F391AC372BAF7A540019BCDA /* CircularProgressView.swift in Sources */,
+				F391AC332BAF43C30019BCDA /* TimerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
