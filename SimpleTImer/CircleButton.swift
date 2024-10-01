@@ -13,10 +13,16 @@ struct CircleButton: View {
     let textPoint = 14
     var body: some View {
         ZStack {
+            Color.black
+                .ignoresSafeArea()
             Circle()
-                .stroke(.blue, lineWidth: 4)
+                .stroke(.blue, lineWidth: 6)
+                .padding(10)
             Text(title)
-                .font(.system(size: 24))
+                .font(
+                    .system(size: 24)
+                    .weight(.bold))
+                .foregroundColor(.white)
         }
         .frame(width: size, height: size)
     }

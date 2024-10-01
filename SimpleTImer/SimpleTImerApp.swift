@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SimpleTImerApp: App {
-    var model  = TimerModel()
+    @StateObject  var model  = TimerModel()
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

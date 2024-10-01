@@ -9,22 +9,24 @@ import SwiftUI
 
 struct TimerButton: View {
     let time : Int
-    var model : TimerModel
+    @EnvironmentObject  var model : TimerModel
     
     var body: some View {
         Button (action: {
             model.minutes = time
             model.state = .active
+            
+            model.title = (time == 1) ? "\(time) Minute" : "\(time) Minutes" 
         }) {
             ZStack {
                 Text(String(time) )
-                    .font(.system(size: 48))
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(Color.black)
+                    .font(.system(size: 54))
+                    .frame(width: 115, height: 115)
+                    .foregroundColor(Color.white)
                     .clipShape(Circle())
                 Circle()
                     .stroke(Color.blue, lineWidth:  5)
-                    .frame(width:100, height:100)
+                    .frame(width:115, height:115)
             }
         }
     }
@@ -32,6 +34,6 @@ struct TimerButton: View {
 
 struct TimerButton_Previews: PreviewProvider {
     static var previews: some View {
-        TimerButton(time: 1, model: TimerModel())
+        TimerButton(time: 1)
     }
 }

@@ -16,7 +16,7 @@ class SoundPlayer {
 
     static func playAlarm() {
         // need to declare local path as url soundfile: ".mp3"
-        let url = Bundle.main.url(forResource: "Electronic_Chime", withExtension: "mp3")
+        let url = Bundle.main.url(forResource: "best_alarm", withExtension: "mp3")
         // now use declared path 'url' to initialize the player
         if let soundUrl =  url {
             audioPlayer = AVPlayer.init(url: soundUrl)

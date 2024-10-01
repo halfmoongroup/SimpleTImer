@@ -16,11 +16,12 @@ struct SimpleTimerView: View {
                     .padding(.top, 10)
                 VStack {
                     Text("\(model.secondsToCompletion.asTimestamp)")
-                        .font(.system(size: 24))
+                        .font(.system(size: 32))
                         .foregroundColor(.white)
                         .padding([.top, .bottom], 10)
-                    if (model.title.isEmpty) {
+                    if (!model.title.isEmpty) {
                         Text(model.title)
+                            .font(.system(size: 32))
                             .foregroundColor(.white)
                     }
                 }
@@ -33,22 +34,26 @@ struct SimpleTimerView: View {
                 }
                 .buttonStyle(CancelButtonStyle())
                 Spacer()
-                switch model.state {
-                case .cancelled:
+                if (.cancelled == model.state) {
                     Button("Start") {
                         model.state = .active
                     }
                     .buttonStyle(StartButtonStyle())
-                case .paused:
+                }
+                if (.paused == model.state) {
                     Button("Resume") {
                         model.state = .resumed
                     }
                     .buttonStyle(PauseButtonStyle())
-                case .active, .resumed:
+                }
+                if (.active == model.state ||
+                    .resumed == model.state ) {
+
                     Button("Pause") {
                         model.state = .paused
                     }
                     .buttonStyle(PauseButtonStyle())
+                    
                 }
                 
             }

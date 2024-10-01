@@ -7,11 +7,16 @@
 
 import SwiftUI
 import CoreData
+import os
 
 struct ContentView: View {
-    @State var date = Date()
+    let logger = Logger()
+    @State private var currentDate = Date.now
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var model : TimerModel
+    @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State var timeNow = "3:42 PM"
+    //let dateFormatter = DateFormatter()
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -20,49 +25,52 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            
+            Color.black
+                .ignoresSafeArea()
             HStack {
                 VStack {
-                    VStack(spacing:20) {
-                        Text("\(timeString(date:date))")
-                            .font(.system(size: 48))
-                        
-                        Text("Minutes")
-                            .font(.system(size: 24))
-                        
-                        HStack(spacing:20) {
-                            
-                            
-                            TimerButton(time: 1, model: model)
-                            TimerButton(time: 2, model: model)
-                            TimerButton(time: 3, model: model)
-                            
+                    Text(" \(timeNow)")
+                        .font(.system(size: 53))
+                        .foregroundColor(.white)
+                        .onReceive(timer) {_ in
+                            self.timeNow =  timeFormat.string(from: Date())
+                         //   self.logger.info("tick \(timeNow) !")
+
                         }
-                        HStack(spacing:20) {
-                            
-                            TimerButton(time:  5, model: model)
-                            TimerButton(time: 10, model: model)
-                            TimerButton(time: 15, model: model)
-                            
-                            
-                        }
+                    if model.displayTimer {
+                        SimpleTimerView()
                         Spacer()
-                        
+                    }
+                    else {
+                        VStack(spacing:20) {
+                            Text("Minutes")
+                                .font(.system(size: 48))
+                                .foregroundColor(.white)
+                            
+                            HStack(spacing:20) {
+                                TimerButton(time: 1)
+                                TimerButton(time: 2)
+                            }
+                            HStack(spacing:20) {
+                                TimerButton(time: 3)
+                                TimerButton(time:  5)
+                            }
+                            HStack(spacing:20) {
+                                TimerButton(time: 10)
+                                TimerButton(time: 15)
+                            }
+                            Spacer()
+                        }
+                        //.border(.blue)
                     }
                 }
             }
-            .blur(radius: model.displayTimer ? 30 : 0)
-            if model.displayTimer {
-                SimpleTimerView()
-                Spacer()
-            }
-            
         }
     }
     
     var timeFormat: DateFormatter {
         let formatter  = DateFormatter()
-        formatter.dateFormat = "hh:mm a"
+        formatter.dateFormat = "h:mm a"
         return formatter
     }
     

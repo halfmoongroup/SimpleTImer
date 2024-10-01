@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,13 +14,14 @@
 		F391AC232BAE27C00019BCDA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC222BAE27C00019BCDA /* Persistence.swift */; };
 		F391AC262BAE27C00019BCDA /* SimpleTImer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F391AC242BAE27C00019BCDA /* SimpleTImer.xcdatamodeld */; };
 		F391AC2D2BAE349C0019BCDA /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC2C2BAE349C0019BCDA /* CircleButton.swift */; };
-		F391AC2F2BAE565C0019BCDA /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC2E2BAE565C0019BCDA /* ThemeView.swift */; };
 		F391AC312BAF43760019BCDA /* SimpleTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC302BAF43760019BCDA /* SimpleTimerView.swift */; };
 		F391AC332BAF43C30019BCDA /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC322BAF43C30019BCDA /* TimerModel.swift */; };
 		F391AC352BAF47010019BCDA /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC342BAF47010019BCDA /* SoundPlayer.swift */; };
 		F391AC372BAF7A540019BCDA /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC362BAF7A540019BCDA /* CircularProgressView.swift */; };
 		F391AC392BAF7AF20019BCDA /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC382BAF7AF20019BCDA /* ButtonStyles.swift */; };
 		F391AC3B2BAFE34E0019BCDA /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AC3A2BAFE34E0019BCDA /* TimerButton.swift */; };
+		F3F5685C2BB134C000B72734 /* Electronic_Chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3F5685B2BB134C000B72734 /* Electronic_Chime.mp3 */; };
+		F3F5685E2BB28C5400B72734 /* best_alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3F5685D2BB28C5400B72734 /* best_alarm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +33,14 @@
 		F391AC222BAE27C00019BCDA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F391AC252BAE27C00019BCDA /* SimpleTImer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTImer.xcdatamodel; sourceTree = "<group>"; };
 		F391AC2C2BAE349C0019BCDA /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
-		F391AC2E2BAE565C0019BCDA /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		F391AC302BAF43760019BCDA /* SimpleTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTimerView.swift; sourceTree = "<group>"; };
 		F391AC322BAF43C30019BCDA /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		F391AC342BAF47010019BCDA /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		F391AC362BAF7A540019BCDA /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		F391AC382BAF7AF20019BCDA /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		F391AC3A2BAFE34E0019BCDA /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		F3F5685B2BB134C000B72734 /* Electronic_Chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Electronic_Chime.mp3; path = Sounds/Electronic_Chime.mp3; sourceTree = "<group>"; };
+		F3F5685D2BB28C5400B72734 /* best_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = best_alarm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		F391AC182BAE27BF0019BCDA /* SimpleTImer */ = {
 			isa = PBXGroup;
 			children = (
+				F3F5685D2BB28C5400B72734 /* best_alarm.mp3 */,
 				F391AC192BAE27BF0019BCDA /* SimpleTImerApp.swift */,
 				F391AC302BAF43760019BCDA /* SimpleTimerView.swift */,
 				F391AC1B2BAE27BF0019BCDA /* ContentView.swift */,
@@ -80,10 +83,10 @@
 				F391AC1D2BAE27C00019BCDA /* Assets.xcassets */,
 				F391AC222BAE27C00019BCDA /* Persistence.swift */,
 				F391AC342BAF47010019BCDA /* SoundPlayer.swift */,
+				F3F5685B2BB134C000B72734 /* Electronic_Chime.mp3 */,
 				F391AC242BAE27C00019BCDA /* SimpleTImer.xcdatamodeld */,
 				F391AC1F2BAE27C00019BCDA /* Preview Content */,
 				F391AC2C2BAE349C0019BCDA /* CircleButton.swift */,
-				F391AC2E2BAE565C0019BCDA /* ThemeView.swift */,
 				F391AC322BAF43C30019BCDA /* TimerModel.swift */,
 			);
 			path = SimpleTImer;
@@ -125,7 +128,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					F391AC152BAE27BF0019BCDA = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -133,7 +136,7 @@
 				};
 			};
 			buildConfigurationList = F391AC112BAE27BE0019BCDA /* Build configuration list for PBXProject "SimpleTImer" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -157,6 +160,8 @@
 			files = (
 				F391AC212BAE27C00019BCDA /* Preview Assets.xcassets in Resources */,
 				F391AC1E2BAE27C00019BCDA /* Assets.xcassets in Resources */,
+				F3F5685E2BB28C5400B72734 /* best_alarm.mp3 in Resources */,
+				F3F5685C2BB134C000B72734 /* Electronic_Chime.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +179,6 @@
 				F391AC312BAF43760019BCDA /* SimpleTimerView.swift in Sources */,
 				F391AC352BAF47010019BCDA /* SoundPlayer.swift in Sources */,
 				F391AC1A2BAE27BF0019BCDA /* SimpleTImerApp.swift in Sources */,
-				F391AC2F2BAE565C0019BCDA /* ThemeView.swift in Sources */,
 				F391AC262BAE27C00019BCDA /* SimpleTImer.xcdatamodeld in Sources */,
 				F391AC3B2BAFE34E0019BCDA /* TimerButton.swift in Sources */,
 				F391AC372BAF7A540019BCDA /* CircularProgressView.swift in Sources */,
@@ -189,6 +193,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -221,6 +226,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -235,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -281,6 +288,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -289,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -304,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleTImer/Preview Content\"";
@@ -313,8 +322,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,9 +331,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hmg.SimpleTImer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleTImer/Preview Content\"";
@@ -342,8 +356,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,9 +365,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hmg.SimpleTImer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

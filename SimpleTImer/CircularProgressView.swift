@@ -18,18 +18,18 @@ struct CircularProgressView: View {
             Circle()
                 .stroke(lineWidth: 8.0)
                 .opacity(0.3)
-                .foregroundColor(Color("TimerButtonCancel"))
+                .foregroundColor(Color("DialStart"))
             Circle()
                 .trim(from: 0.0, to: CGFloat(min(progress, 1.0)))
                 .stroke(style: StrokeStyle(lineWidth: 8.0, lineCap: .round, lineJoin: .round))
-                .foregroundColor(Color("TimerButtonPause"))
+                .foregroundColor(Color("DialStop"))
             // Ensures the animation starts from 12 o'clock
                 .rotationEffect(Angle(degrees: 270))
         }
         .padding(10)
         // The progress animation will animate over 1 second which
         // allows for a continuous smooth update of the ProgressView
-        .animation(.linear(duration: 1.0), value: progress)
+        .animation(.linear(duration: 0), value: progress)
     }
 }
 
